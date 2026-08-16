@@ -169,7 +169,7 @@
           <p class="section-index">Dataset</p>
           <h2>Real, paired, and disjoint by room and speaker</h2>
           <p>
-            The reported duration is underlying conversation time, not the sum of fixed and moving recordings. Training, development, and evaluation partitions use disjoint rooms and speakers.
+            The corpus comprises a labeled 48-hour development set for model training, fine-tuning, and system development, and a 2-hour evaluation set with hidden speaker labels and transcripts. The reported duration is underlying conversation time, not the sum of fixed and moving recordings. The two sets are disjoint in both rooms and speakers.
           </p>
         </div>
 
@@ -179,20 +179,19 @@
               <caption>EAR-1 corpus statistics</caption>
               <thead>
                 <tr>
-                  <th scope="col">Dataset</th>
-                  <th scope="col">Train</th>
-                  <th scope="col">Dev</th>
-                  <th scope="col">Eval</th>
+                  <th scope="col">Statistic</th>
+                  <th scope="col">Development</th>
+                  <th scope="col">Evaluation</th>
                   <th scope="col">Total</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><th scope="row">Duration (h)</th><td></td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">Sessions</th><td></td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">Rooms</th><td></td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">Participants</th><td></td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">Male</th><td></td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">Female</th><td></td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">Duration (h)</th><td>48</td><td>2</td><td>50</td></tr>
+                <tr><th scope="row">Sessions</th><td></td><td></td><td></td></tr>
+                <tr><th scope="row">Rooms</th><td></td><td></td><td></td></tr>
+                <tr><th scope="row">Participants</th><td></td><td></td><td></td></tr>
+                <tr><th scope="row">Male</th><td></td><td></td><td></td></tr>
+                <tr><th scope="row">Female</th><td></td><td></td><td></td></tr>
               </tbody>
             </table>
           </div>
@@ -201,7 +200,7 @@
             <h3>What participants receive</h3>
             <ul class="check-list">
               <li>Synchronized fixed-array and moving-array multi-channel audio</li>
-              <li>Speaker activity and attributed transcripts for train and development</li>
+              <li>Ground-truth speaker activity, speaker identities, and attributed transcripts for development</li>
               <li>Oracle VAD regions for ESD-ON, including evaluation</li>
               <li>Official formats, scoring scripts, baselines, and evaluation configurations</li>
             </ul>
@@ -261,7 +260,7 @@
           </li>
           <li class="timeline-major">
             <time datetime="2026-09-15">Sep. 15, 2026</time>
-            <span>Training/development data and baseline systems released</span>
+            <span>Development data and baseline systems released</span>
           </li>
           <li>
             <time datetime="2026-10-14">Oct. 14, 2026</time>
