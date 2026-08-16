@@ -747,6 +747,14 @@ tbody td {
   font-size: 14px;
 }
 
+.organizer-email {
+  display: block;
+  margin-top: 10px;
+  color: var(--teal-dark);
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
 .contact-band {
   padding: 76px 0;
   color: var(--white);
