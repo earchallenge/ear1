@@ -31,6 +31,7 @@
         <a href="#overview">Overview</a>
         <a href="#tasks">Tasks</a>
         <a href="#dataset">Dataset</a>
+        <a href="#resources">Resources</a>
         <a href="#schedule">Schedule</a>
         <a href="#organizers">Organizers</a>
         <a class="nav-register" href="https://forms.gle/oBDTLZCdumpGLzpCA" target="_blank" rel="noreferrer">Register</a>
@@ -52,12 +53,13 @@
 
         <div class="hero-actions">
           <a class="button button-primary" href="https://forms.gle/oBDTLZCdumpGLzpCA" target="_blank" rel="noreferrer">Register for EAR-1</a>
+          <a class="button button-secondary" href="#dataset">Explore the dataset</a>
         </div>
 
         <dl class="hero-facts" aria-label="Challenge summary">
           <div>
             <dt>Paired</dt>
-            <dd>fixed and moving arrays</dd>
+            <dd>fixed and moving microphones</dd>
           </div>
           <div>
             <dt>Real</dt>
@@ -65,7 +67,7 @@
           </div>
           <div>
             <dt>Disjoint</dt>
-            <dd>rooms and speakers</dd>
+            <dd>evaluation rooms and speakers</dd>
           </div>
           <div>
             <dt>2</dt>
@@ -86,7 +88,7 @@
           <h2 id="scene-heading">One conversation, two acoustic viewpoints</h2>
         </div>
         <figure class="scene-figure">
-          <img src="assets/scene.png" alt="Paired fixed and moving microphone arrays recording the same multi-party conversation under oracle navigation." width="1828" height="800">
+          <img src="assets/scene.png" alt="Paired fixed and moving microphones recording the same multi-party conversation under oracle navigation." width="1828" height="800">
           <figcaption>
             Paired fixed and mobile recordings support controlled analysis of the acoustic value of movement for speaker diarization and speech recognition.
           </figcaption>
@@ -105,7 +107,7 @@
             Fixed far-field systems are vulnerable to distance, background noise, reverberation, and overlapping speech. Embodied devices can rotate toward active speakers or approach sound sources, potentially improving direct-to-reverberant ratio and spatial separability.
           </p>
           <p>
-            Movement also introduces self-noise and rapidly varying acoustic transfer functions. EAR-1 isolates this trade-off by using a human proxy to execute a predefined oracle-navigation policy, while participating systems receive only multi-channel audio.
+            Movement also introduces self-noise and rapidly varying acoustic transfer functions. EAR-1 isolates this trade-off by using a human proxy to execute a predefined oracle-navigation policy. At evaluation, each track provides a single-channel microphone recording and the corresponding task information.
           </p>
           <blockquote>
             Navigation is controlled. Speech perception remains the challenge.
@@ -120,7 +122,7 @@
           <p class="section-index">Challenge tracks</p>
           <h2>Two tasks, paired fixed and moving conditions</h2>
           <p>
-            Each task is evaluated separately on synchronized Fixed-Array and Moving-Array recordings of the same conversations.
+            Each task is evaluated separately on synchronized fixed-microphone (D1) and moving-microphone (R1) recordings of the same conversations. These conditions are also referred to as the Fixed-Array and Moving-Array tracks in earlier challenge materials.
           </p>
         </div>
 
@@ -130,15 +132,15 @@
             <p class="task-code">ESD-ON</p>
             <h3>Embodied Speaker Diarization with Oracle Navigation</h3>
             <p>
-              Assign consistent speaker labels to continuous multi-channel recordings, including regions with overlapping speech. Oracle voice activity detection regions are provided without revealing active-speaker identities.
+              Assign consistent speaker labels to continuous single-channel recordings, including regions with overlapping speech. Oracle voice activity detection regions are provided without revealing active-speaker identities.
             </p>
             <div class="task-meta">
               <span><strong>Metric</strong> DER</span>
               <span><strong>Input</strong> Audio + oracle VAD</span>
             </div>
             <div class="track-list" aria-label="ESD-ON tracks">
-              <span>Fixed-Array Track</span>
-              <span>Moving-Array Track</span>
+              <span>Fixed-Microphone Track · D1</span>
+              <span>Moving-Microphone Track · R1</span>
             </div>
           </article>
 
@@ -147,15 +149,15 @@
             <p class="task-code">ESR-ON</p>
             <h3>Embodied Speech Recognition with Oracle Navigation</h3>
             <p>
-              Generate speaker-attributed transcripts from continuous, unsegmented multi-channel recordings. Systems jointly handle speech activity detection, speaker attribution, and recognition.
+              Generate speaker-attributed transcripts from continuous, unsegmented single-channel recordings. Systems jointly handle speech activity detection, speaker attribution, and recognition.
             </p>
             <div class="task-meta">
               <span><strong>Metric</strong> cpWER</span>
               <span><strong>Input</strong> Continuous audio</span>
             </div>
             <div class="track-list" aria-label="ESR-ON tracks">
-              <span>Fixed-Array Track</span>
-              <span>Moving-Array Track</span>
+              <span>Fixed-Microphone Track · D1</span>
+              <span>Moving-Microphone Track · R1</span>
             </div>
           </article>
         </div>
@@ -166,29 +168,62 @@
       <div class="section-shell">
         <div class="section-heading">
           <p class="section-index">Dataset</p>
-          <h2>Real, paired, and disjoint by room and speaker</h2>
+          <h2>Real conversations, paired acoustic viewpoints</h2>
           <p>
-            The EAR-1 corpus will provide paired multi-channel recordings of real multi-party conversations captured synchronously by fixed and moving microphone arrays. A labeled development set will support model training and system development, while an evaluation set with hidden annotations will be used for final ranking. The two sets will be disjoint in both rooms and speakers.
+            The EAR-1 corpus pairs synchronized fixed and moving microphone recordings of real multi-party conversations. The released training and development sets contain 62 sessions with 47 distinct speakers. Training and development speakers do not overlap; evaluation rooms and speakers will be disjoint from both sets.
           </p>
+        </div>
+
+        <div class="dataset-stats" role="group" aria-label="Training and development set statistics">
+          <article><p class="stat-label">Training</p><p class="stat-value">55 <span>sessions</span></p><p>27 speakers</p></article>
+          <article><p class="stat-label">Development</p><p class="stat-value">7 <span>sessions</span></p><p>20 speakers</p></article>
+          <article><p class="stat-label">Across both sets</p><p class="stat-value">47 <span>speakers</span></p><p>No shared speakers</p></article>
         </div>
 
         <div class="data-layout">
           <div class="data-notes">
-            <h3>What participants receive</h3>
+            <h3>Training and development materials</h3>
             <ul class="check-list">
-              <li>Synchronized fixed-array and moving-array multi-channel audio</li>
-              <li>Ground-truth speaker activity, speaker identities, and attributed transcripts for development</li>
-              <li>Oracle VAD regions for ESD-ON, including evaluation</li>
-              <li>Official formats, scoring scripts, baselines, and evaluation configurations</li>
+              <li>Synchronized fixed-microphone (D1) and moving-microphone (R1) recordings</li>
+              <li>Auxiliary microphone recordings (H1/H2/H3), participant headset recordings, and fixed-view video</li>
+              <li>Time-aligned transcriptions and speaker activity annotations in TextGrid format</li>
+              <li>For training and development oracle VAD, annotated speech intervals in the per-speaker TextGrid files, such as A/P037.TextGrid</li>
             </ul>
 
-            <h3>What remains hidden</h3>
+            <p class="data-clarification">All released WAV files are single-channel recordings. No separate multi-channel audio archive is provided.</p>
+
+            <h3>Evaluation inputs</h3>
             <ul class="plain-list">
-              <li>Navigation trajectories and device poses</li>
-              <li>Video, inertial signals, and close-talking audio</li>
-              <li>Evaluation speaker labels and reference transcripts</li>
+              <li>Fixed-Microphone Track: D1 only. Moving-Microphone Track: R1 only.</li>
+              <li>Oracle VAD regions are also provided for ESD-ON evaluation, without speaker identities.</li>
+              <li>Auxiliary microphone recordings, headset audio, video, trajectories, device poses, and inertial signals are not evaluation inputs.</li>
+              <li>Evaluation speaker labels and reference transcripts remain hidden.</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="content-section">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="section-index">Resources</p>
+          <h2>Data access and baseline systems</h2>
+          <p>Training and development data are available to registered teams. Download instructions and data updates are distributed to the registered contact email.</p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <p class="resource-status">Available to registered teams</p>
+            <h3>Training &amp; development data</h3>
+            <p>Use the latest speaker annotations and split instructions sent by the organizing team. The statistics above reflect the corrected release.</p>
+            <a href="https://forms.gle/oBDTLZCdumpGLzpCA" target="_blank" rel="noreferrer">Register to receive data access</a>
+          </article>
+          <article class="resource-card">
+            <p class="resource-status">Expected October 26–27, 2026</p>
+            <h3>Baselines &amp; scoring tools</h3>
+            <p>ASR and speaker diarization baselines, data usage instructions, and scoring scripts, including the DER script, are being prepared for release. Registered teams will be notified by email when they are available.</p>
+            <a href="mailto:ear.challenge.office@gmail.com">Contact the organizing team</a>
+          </article>
         </div>
       </div>
     </section>
@@ -237,7 +272,11 @@
           </li>
           <li class="timeline-major">
             <time datetime="2026-10-13">Oct. 13, 2026</time>
-            <span>Development set and baseline systems released</span>
+            <span>Training and development data release</span>
+          </li>
+          <li>
+            <time datetime="2026-10-26">Oct. 26–27, 2026</time>
+            <span>Baseline systems, data usage instructions, and scoring scripts expected</span>
           </li>
           <li>
             <time datetime="2026-11-24">Nov. 24, 2026</time>
@@ -293,7 +332,7 @@
             <span>02</span>
             <div>
               <h3>Permitted inputs</h3>
-              <p>Systems may use only the officially released audio and task metadata. Trajectories, poses, auxiliary sensors, and organizer-only annotations are prohibited.</p>
+              <p>Training may use all released audio, including auxiliary microphones and headset recordings as training material or clean targets. Joint training on D1 and R1 is permitted, and the same model may be submitted to both tracks. At evaluation, the fixed track uses D1 alone and the moving track uses R1 alone, together with the corresponding task information. Trajectories, poses, auxiliary sensors, and organizer-only annotations are prohibited.</p>
             </div>
           </article>
           <article>
@@ -363,3 +402,4 @@
   </footer>
 </body>
 </html>
+
