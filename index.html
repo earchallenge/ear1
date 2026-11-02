@@ -211,6 +211,7 @@
           <p class="section-index">Resources</p>
           <h2>Data access and baseline systems</h2>
           <p>Training and development data are available to registered teams. Download instructions and data updates are distributed to the registered contact email.</p>
+          <p><a href="#external-resources">View declared external resources</a></p>
         </div>
         <div class="resource-grid">
           <article class="resource-card">
@@ -228,6 +229,33 @@
             <p>Development reference recipes: ASR reports CER and character-level cpCER. The diarization recipe includes DER scoring and currently runs without oracle VAD. See the guides for the exact inference and scoring settings.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="external-resources" class="data-band" aria-labelledby="external-resources-heading">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="section-index">Resource declarations</p>
+          <h2 id="external-resources-heading">Declared external resources</h2>
+          <p>Public models and datasets declared by participating teams are listed here for transparency and access by all participants. Last updated: November 2, 2026.</p>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card">
+            <p class="resource-status">Pretrained model · Declared October 30, 2026</p>
+            <h3>DiariZen</h3>
+            <p>Speaker diarization · Declared by Noname (ESD-ON).</p>
+            <p><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-md-v2" target="_blank" rel="noreferrer">BUT-FIT/diarizen-wavlm-large-s80-md-v2</a></p>
+            <p>Declared model revision:<br><code style="overflow-wrap:anywhere">027b3e221b9d81dce2be794084f1dbd3ba2da403</code></p>
+          </article>
+          <article class="resource-card">
+            <p class="resource-status">Pretrained model · Declared October 30, 2026</p>
+            <h3>WeSpeaker ResNet34-LM</h3>
+            <p>Speaker embeddings · Declared by Noname (ESD-ON).</p>
+            <p><a href="https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM" target="_blank" rel="noreferrer">pyannote/wespeaker-voxceleb-resnet34-LM</a></p>
+            <p>Declared model revision:<br><code style="overflow-wrap:anywhere">837717ddb9ff5507820346191109dc79c958d614</code></p>
+          </article>
+        </div>
+        <p class="data-clarification">To declare external resources, email the resource names and download links to <a href="mailto:ear.challenge.office@gmail.com">ear.challenge.office@gmail.com</a>. Include model versions or revisions where available. All resources used must be publicly accessible, cited, and disclosed in the system report; no new external resources may be introduced after the evaluation data release.</p>
       </div>
     </section>
 
