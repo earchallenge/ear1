@@ -237,31 +237,58 @@
         <div class="section-heading">
           <p class="section-index">Resource declarations</p>
           <h2 id="external-resources-heading">Declared external resources</h2>
-          <p>Public models and datasets declared by participating teams are listed here for transparency and access by all participants. Last updated: November 19, 2026.</p>
+          <p>Public models and datasets declared by participating teams are listed here for transparency and access by all participants. Last updated: November 21, 2026.</p>
+          <p>Entries include resources under consideration. Revisions and versions are reproduced from team declarations. Teams will disclose their actual resource use and exact model versions in their system reports. Declaration dates use UTC+8.</p>
         </div>
-        <div class="resource-grid">
-          <article class="resource-card">
-            <p class="resource-status">Pretrained model · Declared October 30, 2026</p>
-            <h3>DiariZen</h3>
-            <p>Speaker diarization · Declared by Noname (ESD-ON).</p>
-            <p><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-md-v2" target="_blank" rel="noreferrer">BUT-FIT/diarizen-wavlm-large-s80-md-v2</a></p>
-            <p>Declared model revision:<br><code style="overflow-wrap:anywhere">027b3e221b9d81dce2be794084f1dbd3ba2da403</code></p>
-          </article>
-          <article class="resource-card">
-            <p class="resource-status">Pretrained model · Declared October 30, 2026</p>
-            <h3>WeSpeaker ResNet34-LM</h3>
-            <p>Speaker embeddings · Declared by Noname (ESD-ON).</p>
-            <p><a href="https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM" target="_blank" rel="noreferrer">pyannote/wespeaker-voxceleb-resnet34-LM</a></p>
-            <p>Declared model revision:<br><code style="overflow-wrap:anywhere">837717ddb9ff5507820346191109dc79c958d614</code></p>
-          </article>
-          <article class="resource-card">
-            <p class="resource-status">Pretrained model · Declared November 16, 2026</p>
-            <h3>MOSS-Transcribe-Diarize 0.9B</h3>
-            <p>Candidate speaker diarization system · Declared by SoundWalkers (ESD-ON).</p>
-            <p><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize" target="_blank" rel="noreferrer">OpenMOSS-Team/MOSS-Transcribe-Diarize</a></p>
-            <p>Final use and model version will be disclosed in the system report.</p>
-          </article>
+        <h3>Pretrained models</h3>
+        <div class="resource-table-scroll" role="region" aria-label="Declared pretrained models" tabindex="0">
+          <table class="resource-table">
+            <thead><tr><th scope="col">Model and download</th><th scope="col">Declared revision or version</th><th scope="col">Declared by and date</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-md-v2" target="_blank" rel="noreferrer">DiariZen WavLM-Large s80 MD v2</a></th><td>Revision<br><code>027b3e221b9d81dce2be794084f1dbd3ba2da403</code></td><td>Noname (ESD-ON) · <time datetime="2026-10-30">2026-10-30</time><br>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time><br>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM" target="_blank" rel="noreferrer">WeSpeaker ResNet34-LM (VoxCeleb)</a></th><td>Revision<br><code>837717ddb9ff5507820346191109dc79c958d614</code></td><td>Noname (ESD-ON) · <time datetime="2026-10-30">2026-10-30</time><br>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time><br>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-md" target="_blank" rel="noreferrer">DiariZen WavLM-Large s80 MD</a></th><td>Revision<br><code>6285693ddd5b38e8229acb93f864f3d04a82bee1</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-base-s80-md" target="_blank" rel="noreferrer">DiariZen WavLM-Base s80 MD</a></th><td>Revision<br><code>e73cd10d8ef421c896de4a21804850d298cfbef6</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/BUT-FIT/diarizen-wavlm-large-s80-mlc" target="_blank" rel="noreferrer">DiariZen WavLM-Large s80 MLC</a></th><td>Revision<br><code>f054c7293345fe82c6cbf6cb88cc1491750fefb5</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/nvidia/diar_sortformer_4spk-v1" target="_blank" rel="noreferrer">NVIDIA Sortformer 4spk v1</a></th><td>Revision<br><code>2617bffbd820aa29d8f1fb6ab6f9ed7f0adbc996</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2" target="_blank" rel="noreferrer">NVIDIA Streaming Sortformer 4spk v2</a></th><td>Revision<br><code>84edd514b8ef68004c10086918cd62f2148cbd59</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/pyannote/segmentation-3.0" target="_blank" rel="noreferrer">pyannote segmentation-3.0</a></th><td>Revision<br><code>e66f3d3b9eb0873085418a7b813d3b369bf160bb</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/pyannote/speaker-diarization-community-1" target="_blank" rel="noreferrer">pyannote speaker-diarization-community-1</a></th><td>Revision<br><code>3533c8cf8e369892e6b79ff1bf80f7b0286a54ee</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/microsoft/wavlm-large" target="_blank" rel="noreferrer">WavLM Large</a></th><td>Revision<br><code>c1423ed94bb01d80a3f5ce5bc39f6026a0f4828c</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common" target="_blank" rel="noreferrer">3D-Speaker CAM++ (zh-cn, 16k, common)</a></th><td>Version<br><code>v1.0.0, v2.0.2</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://modelscope.cn/models/iic/speech_campplus_sv_zh_en_16k-common_advanced" target="_blank" rel="noreferrer">3D-Speaker CAM++ (zh/en, 16k, common, advanced)</a></th><td>Version<br><code>v1.0.0</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://modelscope.cn/models/iic/speech_eres2net_sv_zh-cn_16k-common" target="_blank" rel="noreferrer">3D-Speaker ERes2Net (zh-cn, 16k, common)</a></th><td>Version<br><code>v1.0.5</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://modelscope.cn/models/iic/speech_eres2netv2_sv_zh-cn_16k-common" target="_blank" rel="noreferrer">3D-Speaker ERes2NetV2 (zh-cn, 16k, common)</a></th><td>Version<br><code>v1.0.1, v1.0.2</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/Wespeaker/wespeaker-cnceleb-resnet34-LM" target="_blank" rel="noreferrer">WeSpeaker ResNet34-LM (CN-Celeb)</a></th><td>Revision<br><code>ed25c1ecbd9e8d3c7944df95430da02bd3cdcf7a</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/Wespeaker/wespeaker-cnceleb-resnet34" target="_blank" rel="noreferrer">WeSpeaker ResNet34 (CN-Celeb)</a></th><td>Revision<br><code>c2c6282460dd5958d8eec16785f035d92e4a2d77</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/Wespeaker/wespeaker-voxceleb-resnet293-LM" target="_blank" rel="noreferrer">WeSpeaker ResNet293-LM (VoxCeleb)</a></th><td>Revision<br><code>6e6bffe5bf3d772a1f143dc6dbfea58a0799ea83</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/nvidia/speakerverification_en_titanet_large" target="_blank" rel="noreferrer">NVIDIA TitaNet-Large</a></th><td>Revision<br><code>0dc382f40121a5fbd34db10a2bb04d826c2be6a8</code></td><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/TencentGameMate/chinese-hubert-large" target="_blank" rel="noreferrer">Chinese HuBERT Large</a></th><td>Revision<br><code>90cb660492214f687e60f5ca509b20edae6e75bd</code></td><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize" target="_blank" rel="noreferrer">MOSS-Transcribe-Diarize 0.9B</a></th><td>Version<br><code>0.9B (SoundWalkers)</code></td><td>SoundWalkers (ESD-ON) · <time datetime="2026-11-16">2026-11-16</time><br>BEH Labs · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/nvidia/Nemotron-3-Diarization" target="_blank" rel="noreferrer">NVIDIA Nemotron-3-Diarization</a></th><td>—</td><td>BEH Labs · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noreferrer">NVIDIA Nemotron 3.5 Transcribe 30B-A4B</a></th><td>—</td><td>BEH Labs · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+            </tbody>
+          </table>
         </div>
+        <h3>Public datasets</h3>
+        <div class="resource-table-scroll" role="region" aria-label="Declared public datasets" tabindex="0">
+          <table class="resource-table">
+            <thead><tr><th scope="col">Dataset and download</th><th scope="col">Declared by and date</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><a href="https://www.openslr.org/119/" target="_blank" rel="noreferrer">AliMeeting</a></th><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time><br>OikawaLab · <time datetime="2026-11-20">2026-11-20</time><br>BEH Labs · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/111/" target="_blank" rel="noreferrer">AISHELL-4</a></th><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time><br>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/17/" target="_blank" rel="noreferrer">MUSAN</a></th><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/28/" target="_blank" rel="noreferrer">Room Impulse Response and Noise Database</a></th><td>Luna (ESD-ON) · <time datetime="2026-11-19">2026-11-19</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/33/" target="_blank" rel="noreferrer">AISHELL-1</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/38/" target="_blank" rel="noreferrer">ST-CMDS</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/93/" target="_blank" rel="noreferrer">AISHELL-3</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/47/" target="_blank" rel="noreferrer">Primewords Chinese Corpus Set 1</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://www.openslr.org/68/" target="_blank" rel="noreferrer">MagicData Mandarin Chinese Read Speech</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+              <tr><th scope="row"><a href="https://3dspeaker.github.io/" target="_blank" rel="noreferrer">3D-Speaker</a></th><td>OikawaLab · <time datetime="2026-11-20">2026-11-20</time></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="data-clarification">Some providers require acceptance of their access terms before downloading a model.</p>
         <p class="data-clarification">To declare external resources, email the resource names and download links to <a href="mailto:ear.challenge.office@gmail.com">ear.challenge.office@gmail.com</a>. Include model versions or revisions where available. All resources used must be publicly accessible, cited, and disclosed in the system report; no new external resources may be introduced after the evaluation data release.</p>
       </div>
     </section>
