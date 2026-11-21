@@ -1087,3 +1087,37 @@ a {
   }
 }
 
+
+/* External resource declarations */
+.resource-table-scroll {
+  overflow-x: auto;
+  margin: 1.25rem 0 2rem;
+}
+.resource-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.resource-table th,
+.resource-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--line, #d8d9d6);
+  vertical-align: top;
+}
+.resource-table thead th {
+  background: rgba(23, 26, 29, 0.05);
+}
+.resource-table tbody th {
+  min-width: 15rem;
+  font-weight: 500;
+}
+.resource-table td {
+  min-width: 14rem;
+}
+.resource-table code {
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.resource-table a {
+  overflow-wrap: anywhere;
+}
