@@ -153,7 +153,7 @@
               Generate speaker-attributed transcripts from continuous, unsegmented single-channel recordings. Systems jointly handle speech activity detection, speaker attribution, and recognition.
             </p>
             <div class="task-meta">
-              <span><strong>Metric</strong> cpWER</span>
+              <span><strong>Metric</strong> cpCER</span>
               <span><strong>Input</strong> Continuous audio</span>
             </div>
             <div class="track-list" aria-label="ESR-ON tracks">
@@ -312,10 +312,12 @@
             </div>
           </article>
           <article class="metric-row">
-            <div class="metric-name metric-name-coral">cpWER</div>
+            <div class="metric-name metric-name-coral">cpCER</div>
             <div>
               <h3>Speaker-attributed recognition</h3>
-              <p>Speaker-wise hypotheses are concatenated in time and scored under the minimum-error mapping between reference and hypothesized speakers.</p>
+              <p>The final evaluation set is in Chinese. Task 2 (ESR-ON) is ranked by concatenated minimum-permutation character error rate (cpCER). Speaker-wise hypotheses are concatenated in time and scored at the character level under the minimum-error mapping between reference and hypothesized speakers.</p>
+              <p>Segment start and end times do not contribute to the score. Scoring uses the transcriptions and their speaker assignments. cpCER is calculated separately for each meeting, then averaged with equal weight for every meeting.</p>
+              <p>An evaluation leaderboard will open later. Submission procedures and formats will be announced when it opens. The official final-evaluation scoring script will not be released before the challenge ends.</p>
             </div>
           </article>
         </div>
